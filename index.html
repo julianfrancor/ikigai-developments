@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IkigAI Developments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header img {
+      height: 80px;
+    }
+    header h1 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 2rem;
+      color: #033d3d;
+    }
+    header p {
+      color: #555;
+      margin: 0;
+      font-style: italic;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      color: #033d3d;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      background-color: #033d3d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    a {
+      color: #008080;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/various/ikigai-developments.png" alt="IkigAI Logo">
+    <h1>IkigAI Developments</h1>
+    <p>IA con propósito, para negocios con visión</p>
+  </header>
+
+  <section class="fade-in">
+    <h2>¿Qué hacemos?</h2>
+    <p>Somos una firma de consultoría y desarrollo especializada en inteligencia artificial para pequeñas y medianas empresas. Nuestro enfoque está en crear soluciones personalizadas que combinen tecnología, propósito y escalabilidad.</p>
+    <ul>
+      <li>Consultoría estratégica en IA</li>
+      <li>Diseño de agentes inteligentes</li>
+      <li>Automatización de procesos y tareas</li>
+      <li>Integración con WhatsApp, CRMs y plataformas e-commerce</li>
+      <li>Generación de contenido automático con IA</li>
+    </ul>
+  </section>
+
+  <section class="fade-in">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>Ahorro de tiempo y costos operativos</li>
+      <li>Mejora del servicio al cliente con atención 24/7</li>
+      <li>Decisiones más inteligentes gracias a la automatización</li>
+      <li>Soluciones escalables adaptadas a tu negocio</li>
+    </ul>
+  </section>
+
+  <section class="fade-in">
+    <h2>Equipo</h2>
+    <ul>
+      <li><strong>Julian Franco Rua</strong> – <a href="mailto:julianfrancor@gmail.com">julianfrancor@gmail.com</a><br>Desarrollador de software con más de 5 años de experiencia y maestría en inteligencia artificial.</li>
+      <li><strong>Natalia Álvarez Mesa</strong> – <a href="mailto:nalvarezmesa10@gmail.com">nalvarezmesa10@gmail.com</a><br>Project Manager con enfoque en desarrollo de productos escalables, conocimiento del ciclo completo de desarrollo de software y enfoque en soluciones de TI con agentes de inteligencia artificial.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 IkigAI Developments · IA con propósito · <a href="mailto:julianfrancor@gmail.com">Contáctanos</a>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
