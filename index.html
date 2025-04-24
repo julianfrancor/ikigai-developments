@@ -32,7 +32,7 @@
       font-style: italic;
     }
     section {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
       background-color: #fff;
@@ -64,11 +64,53 @@
       opacity: 1;
       transform: translateY(0);
     }
+    .testimonial-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
+    }
+    .testimonial {
+      min-width: 160px;
+      height: 160px;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      background-color: #f0fdfd;
+      border: 1px solid #00808033;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 0.75rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .testimonial img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-text {
+      font-style: italic;
+      font-size: 0.75rem;
+    }
+    .testimonial cite {
+      display: block;
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 0.3rem;
+      font-size: 0.75rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="content/ikigai-developments.png" alt="IkigAI Logo">
+    <img src="/content/ikigai-developments.png" alt="IkigAI Logo">
     <h1>IkigAI Developments</h1>
     <p>IA con propósito, para negocios con visión</p>
   </header>
@@ -101,6 +143,27 @@
       <li><strong>Julian Franco Rua</strong> – <a href="mailto:julianfrancor@gmail.com">julianfrancor@gmail.com</a><br>Desarrollador de software con más de 5 años de experiencia y maestría en inteligencia artificial.</li>
       <li><strong>Natalia Álvarez Mesa</strong> – <a href="mailto:nalvarezmesa10@gmail.com">nalvarezmesa10@gmail.com</a><br>Project Manager con enfoque en desarrollo de productos escalables, conocimiento del ciclo completo de desarrollo de software y enfoque en soluciones de TI con agentes de inteligencia artificial.</li>
     </ul>
+  </section>
+
+  <section class="fade-in">
+    <h2>Testimonios</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <img src="content/Piel y Alma.png" alt="Logo Piel y Alma">
+        <div class="testimonial-text">"IkigAI Developments nos ayudó a automatizar el agendamiento de pacientes vía WhatsApp y mejorar nuestro servicio al cliente."</div>
+        <cite>Catalina Franco<br>CEO, Piel y Alma SAS</cite>
+      </div>
+      <div class="testimonial">
+        <img src="content/no-foto.png" alt="No Foto">
+        <div class="testimonial-text">"Gracias a su asesoría en Inteligencia Artificial he logrado optimizar mi trabajo y encontrado puntos de mejora en la gestión contable."</div>
+        <cite>Maria Magnolia Rúa<br>Contadora Independiente</cite>
+      </div>
+      <div class="testimonial">
+        <img src="content/Fashion Fit Hub.jpeg" alt="Logo Fashion Fit Hub">
+        <div class="testimonial-text">"Gracias a su asesoría en desarrollo de Agentes de Inteligencia Artificial he podido escalar la capacidad de generación de contenido en mi ecommerce."</div>
+        <cite>Felipe Palacio<br>Fundador, Fashion Fit Hub</cite>
+      </div>
+    </div>
   </section>
 
   <footer>
