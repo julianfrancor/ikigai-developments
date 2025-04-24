@@ -1,2 +1,1 @@
 # ikigai-developments
-# ikigai-developments
